@@ -35,4 +35,25 @@ public class Pila<T> {
 			return elemento;
 		}
 	}
+	
+	public void push(T elemento) {
+		Nodo<T> aux = new Nodo<>(elemento, tope);
+		tope = aux;
+		tamanio ++;
+	}
+	
+	public String toString() {
+		if(estaVacia()) {
+			return "la pila esta vacia";
+		}else {
+			String res = "";
+			Nodo<T> aux = tope;
+			while(aux != null) {
+				res += aux.toString();
+				aux = aux.getSiguiente();
+			}
+			
+			return res;
+		}
+	}
 }

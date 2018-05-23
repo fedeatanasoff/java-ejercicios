@@ -28,7 +28,7 @@ public class Nodo<T> {
 
 	@Override
 	public String toString() {
-		return "Nodo [elemento=" + elemento + ", siguiente=" + siguiente + "]";
+		return "elem: "+ elemento  + "\n";
 	}
 	
 	
